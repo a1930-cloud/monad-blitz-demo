@@ -47,3 +47,7 @@ Local EVM tests check Solidity behavior, not Monad-specific gas pricing or final
 ## Demo (under 3 minutes)
 
 Run the probe. Show the ¥376 wrong result and green v1 tests beside the ¥247 requirement. Confirm the counterexample, freeze v2, show the old result failing 3 checks, then execute the repaired delivery and show all 5 passing. When a contract is deployed, use separate wallets for escrow, evidence submission, customer approval and withdrawals; open actual transaction receipts.
+
+## Public frontend
+
+https://specbounty-monad.vercel.app — production frontend deployed and anonymous HTTP 200 verified on 2026-11-21. Sites source was synchronized, but its archive-upload service failed to connect, so this initial public release uses Vercel. Onchain deployment remains pending.
