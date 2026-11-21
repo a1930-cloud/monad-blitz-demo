@@ -1,0 +1,26 @@
+{
+  "chainId": 10143,
+  "address": "0xed383f4c459764b442899f57abd8a9ed6f21352c",
+  "deployTx": "0xd0688556d9d96804a0d667f41c16f66bcf4143bee5b58fa9ceee652ceedf0f80",
+  "controller": "0xc663c341246faa56bbac711019f75e192f3f09f0",
+  "runtimeHash": "0x269d9e54785e991a9e9511d31b97659480b77049ed7d8acfca98932d6d7e97a9",
+  "status": "deployed",
+  "verification": {
+    "success": true,
+    "verified": 2,
+    "total": 2,
+    "results": {
+      "monadvision": {
+        "status": "success",
+        "message": "Verified with perfect match",
+        "url": "https://testnet.monadvision.com/address/0xed383f4c459764b442899f57abd8a9ed6f21352c"
+      },
+      "monadscan": {
+        "status": "success",
+        "message": "Pass - Verified",
+        "guid": "289xsx2bwaqhbcm8uknaagwspqpj4affdrghdtijyqifexsv4a",
+        "url": "https://testnet.monadscan.com/address/0xed383f4c459764b442899f57abd8a9ed6f21352c"
+      }
+    }
+  }
+}

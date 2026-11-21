@@ -1,0 +1,64 @@
+{
+  "chainId": 10143,
+  "address": "0xed383f4c459764b442899f57abd8a9ed6f21352c",
+  "taskId": "0x1f227e1b67e22515bfdbf679d596ef5b3050b4aef972edeb42109782decaaa22",
+  "controller": "0xc663c341246faa56bbac711019f75e192f3f09f0",
+  "roleModel": "Customer is the Alchemy session EOA. Hunter and worker share a test recipient contract controlled by that same EOA. This is a real onchain integration test, not independent autonomous agents.",
+  "transactions": [
+    {
+      "label": "create",
+      "hash": "0xb579f66f17007c454109ca7ab090663e62f23d51017198f4e79d9f9dc5bbc0ed",
+      "blockNumber": "81477461",
+      "status": "success"
+    },
+    {
+      "label": "submitCounterexample",
+      "hash": "0xfd3a3e0f33dc147d95e8d6cdaa9593f456d35388fbbf4b4095e8223dca7fad40",
+      "blockNumber": "81477482",
+      "status": "success"
+    },
+    {
+      "label": "approveCounterexample",
+      "hash": "0x8e3f92d26c84e16a861645efbe303f446429019e111b9fe24f8149579461cf88",
+      "blockNumber": "81477498",
+      "status": "success"
+    },
+    {
+      "label": "freeze",
+      "hash": "0x9a19069e90ffc7e4d84b031ad2f18e63bbe66f43aa94433cbf0b6abd85e0847c",
+      "blockNumber": "81477514",
+      "status": "success"
+    },
+    {
+      "label": "submitDelivery",
+      "hash": "0xc573767562c8ca29131da7492fd436027af14f37e659aa35db98464f296aaf5d",
+      "blockNumber": "81477530",
+      "status": "success"
+    },
+    {
+      "label": "approveDelivery",
+      "hash": "0xa00dbb98c4cf1f38ba3f267c8b685dc78a4f816904c45df2d77ece502b84475f",
+      "blockNumber": "81477550",
+      "status": "success"
+    },
+    {
+      "label": "withdraw",
+      "hash": "0xf3b020c91bab2e484c5a9a9c1e7097025812bd2c7acd4676454c6616e64339fc",
+      "blockNumber": "81477566",
+      "status": "success"
+    }
+  ],
+  "recipient": "0x28bc50aab487004d59aed1823b8a7b27354912ba",
+  "materials": {
+    "v1": "0xb9496ac954bd4bd2c872582969c875684b09963a08b7f480461f75bd9595fba2",
+    "v2": "0x9c9b187f9ea37ce0e193a896a18f69f0acb3d608459697aeca68b97cad4a5524",
+    "evidence": "0x5a4a00483756d080375935ba1e5d152cc598cdb8c77a2b73bb213a91d9e213c7",
+    "delivery": "0xc7cdf9bdb1a61ac0d249d0cd5026bab233f724cf9206242d00e24e9910fcc43b"
+  },
+  "result": {
+    "phase": "Complete",
+    "recipientReceivedMON": "0.004",
+    "remainingCredit": "0",
+    "verifiedAt": "2026-11-21T03:49:46.783Z"
+  }
+}

@@ -6,6 +6,6 @@ Application source and setup: [specbounty/README.md](specbounty/README.md).
 
 Research and mentor responses: [docs/](docs/).
 
-Status: frontend lab implemented and locally verified; Solidity escrow compiled and tested on a local EVM. Monad Testnet deployment and real settlement are pending wallet authorization. The current agent probe is deterministic, not an LLM.
+Status: public frontend live at https://specbounty-monad.vercel.app . Escrow deployed to Monad Testnet with verified source. Seven real settlement transactions completed using a disclosed, same-controller test recipient contract. The current probe is deterministic, not an LLM. See specbounty/public/evidence.json for transaction evidence.
 
 No secrets belong in this repository. `.mojo/` contains local credentials and is excluded from Git.
