@@ -1,6 +1,6 @@
 # Blitz Vote — candidate four-hour MVP
 
-Proposal pending event rules and participant feedback.
+Original candidate, not selected. The supplied rules emphasize innovation; basic onchain voting alone is insufficiently distinctive. Do not begin application development until the official coding window is confirmed.
 
 ## Pitch
 

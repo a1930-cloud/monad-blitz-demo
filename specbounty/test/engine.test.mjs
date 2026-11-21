@@ -1,0 +1,7 @@
+import {test} from 'node:test';import assert from 'node:assert/strict';import {seed,execute,evaluate,probe,validateInput,canonical} from '../src/engine.js';
+test('the counterexample passes old tests but violates the repaired specification',()=>{const p=probe(seed);assert.equal(p.valid,true);assert.equal(p.output.totalCents,37600);assert.equal(execute(seed,true).totalCents,24700);assert.ok(p.old.every(t=>t.ok));assert.ok(p.repaired.some(t=>!t.ok));});
+test('repaired worker passes all checks without modifying the input',()=>{const before=JSON.stringify(seed);assert.ok(evaluate(execute(seed,true),seed,2).every(t=>t.ok));assert.equal(JSON.stringify(seed),before);});
+test('probe synthesizes a duplicate for previously clean input',()=>assert.equal(probe([{id:'a',cents:1}]).valid,true));
+test('repaired spec catches removed, fabricated, reordered, or altered records',()=>{for(const output of [{orders:[],totalCents:0},{orders:[{id:'fake',cents:1}],totalCents:1},{orders:[...execute(seed,true).orders].reverse(),totalCents:24700}])assert.ok(evaluate(output,seed,2).some(t=>!t.ok));});
+test('invalid amounts, empty ids and overflow rejected',()=>{for(const rows of [[{id:'',cents:1}],[{id:'a',cents:-1}],[{id:'a',cents:1.2}],[{id:'a',cents:Number.MAX_SAFE_INTEGER},{id:'b',cents:1}]])assert.throws(()=>validateInput(rows));});
+test('hash material canonical across object key insertion order',()=>assert.equal(canonical({b:1,a:2}),canonical({a:2,b:1})));

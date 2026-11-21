@@ -1,14 +1,28 @@
 # Research — 2026-11-21
 
-## Event rules: not yet verified
+## Event rules: supplied by participant on 2026-11-21
 
-User-provided sources:
-- https://monad-foundation.notion.site/Monad-Blitz-6786367594f2834fbd6e818968e1bde9
-- https://monad-foundation.notion.site/7546367594f2835ba564814eae664af9
+Source: participant pasted the rules from the event page. Exact schedule and judging weights remain unconfirmed.
 
-The in-app browser identified the first page as “Monad Blitz 广州”, but reading its content timed out. Search could not retrieve either page; the Notion content endpoint returned HTTP 403. This is not evidence of any event requirement.
+- Maximum team size: 3.
+- Original project conceived for Monad Blitz; no existing project or fork except standard libraries/boilerplate.
+- Coding and assets must start within the official event period. Pre-event research, brainstorming and planning are encouraged.
+- GitHub code submissions outside the event period may affect eligibility. Preserve actual timestamps.
+- Substantial innovation or a distinctive Monad use case is required; a basic clone is discouraged.
+- Submission materials, including GitHub repository, must be public.
+- Project must run on Monad; frontend must be publicly hosted; both must remain available for review over time. The pasted rules do not specify testnet versus mainnet or an exact hosting duration.
+- Confirm MOJO login immediately: https://mojo.devnads.com/ . Register/join a team before submission stage; only team leader can submit project details. Vote for other projects.
+- Team handles prize allocation; agree on responsibilities and split.
 
-Before finalizing scope, verify: event/date and submission deadline; permitted starting code and AI usage; team size; tracks and judging criteria; required network; required repository visibility/license; deployment, video and presentation requirements; sponsor requirements.
+### Immediate checks
+
+Official development start and submission deadline; whether coding is currently allowed; MOJO login/team state; permitted network; required submission fields; current team size.
+
+### Existing workspace provenance
+
+Repository setup, planning notes and a small read-only RPC check script were created before the official schedule was known. The script is development code; do not assume it is exempt. If created before the allowed window, disclose it to organizers and ask whether it can be treated as setup or must be excluded. Do not rewrite dates or represent it as event-period work. No application or contract has been built.
+
+Repository is currently private and must become public before submission. Routine chain voting alone is a weak fit for the stated innovation requirement; the proposal below is not yet selected.
 
 ## Verified developer facts
 

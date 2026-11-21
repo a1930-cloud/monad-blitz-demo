@@ -1,0 +1,20 @@
+{
+  "name": "specbounty",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "npm run compile && vite build",
+    "test": "node --test test/*.test.mjs",
+    "compile": "node scripts/compile.mjs"
+  },
+  "dependencies": {
+    "viem": "^2.40.0"
+  },
+  "devDependencies": {
+    "vite": "^6.1.0",
+    "solc": "0.8.28",
+    "ganache": "^7.9.2"
+  }
+}
