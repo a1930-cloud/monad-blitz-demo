@@ -1,0 +1,30 @@
+{
+  "success": true,
+  "data": {
+    "text": "内部 Agent 验收盲区是真实问题，但是这个需求窄，赏金托管放到链上相对公司已有的审批流和财务流程没有明显增量，做成企业级平台会显得链条过长。我建议做，但一天 demo 只收在单公司两个团队的一次挑战上。\n\n需要它的是已经在内部跑 Agent、spec 和测试分离的团队。普通 QA 写的是正向测试，reviewer 看的是代码，你的机制逼出的是“能通过测试但违反需求”的反例，这类反例正好落在测试套件的盲区里。增量是有的，代价是每条反例都要有人判定有效，这个人会成为新的瓶颈。\n\n往届没有严格撞车。「Review 真香(ReviewPool)」（Monad Playground 黑客松，该场无排名） 把赏金绑到具体 PR、由维护者判断审查价值、合约托管结算，它奖励的是审查劳动，你奖励的是反例证明。「Silicon Labor Arbitration · 硅基劳动仲裁院」（Monad Playground 黑客松，该场无排名） 用托管加确定性规则处理 Agent 任务，主观条件交人类复核，它做的是责任仲裁，你做的是验收盲区挑战。两个都是有人做过，评委可能会拿来比。\n\n链上这部分解决的是反例和规格修复的哈希承诺、赏金分阶段托管和跨团队结算。企业内网用数据库加审批流也能做同样的事，链上不是必需，你自己也说了不宣称公链保密。Monad 在这里只是 demo 的中立账本，不要把它写成卖点。\n\n一天做得完，今天已经有确定性反例、规格修复、合约和七笔结算。该砍的是企业权限、真实 Agent、模型训练。Demo 只留一条线：虚构订单上提交反例，验证“测试通过但违反需求”，分阶段放款，规格修复，反例进回归库。用预设的 Agent 输出，不碰真实内部资料。\n\n今天先找一家有两个团队都在用 Agent 的公司，问他们最近一次“测试过了但后来发现需求没满足”的具体例子，看那个例子能不能被写成一条挑战。写不出来，这个产品的输入就不成立。\n\n最重要的产品风险是反例有效性判定会变成新的人工 review 负担，以及 spec 不便公开、挑战者又必须看到 spec 才能构造反例，内部权限和参与范围之间是个矛盾。",
+    "relatedProjects": [
+      {
+        "projectId": 348,
+        "name": "Review 真香(ReviewPool)",
+        "eventTitle": "Monad Playground 黑客松",
+        "rankLabel": "该场无排名",
+        "url": "https://mojo.devnads.com/projects/348",
+        "collides": false
+      },
+      {
+        "projectId": 330,
+        "name": "Silicon Labor Arbitration · 硅基劳动仲裁院",
+        "eventTitle": "Monad Playground 黑客松",
+        "rankLabel": "该场无排名",
+        "url": "https://mojo.devnads.com/projects/330",
+        "collides": false
+      }
+    ],
+    "quota": {
+      "limit": 20,
+      "used": 6,
+      "remainingToday": 14,
+      "resetAt": "2026-11-21T16:00:00.000Z"
+    }
+  }
+}

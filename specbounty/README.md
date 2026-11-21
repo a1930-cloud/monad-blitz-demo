@@ -1,8 +1,14 @@
 # SpecBounty
 
-**Find flaws in acceptance criteria before an agent gets paid for the wrong result.**
+**Open acceptance challenges that help teams discover blind spots and collect feedback for better agents.**
 
 Monad Blitz Guangzhou prototype, 2026-11-21. The lab demonstrates a concrete failure: a duplicate order passes the initial acceptance tests, inflating the total from ¥247 to ¥376. A reproducible counterexample leads to a repaired, frozen specification and a correct delivery.
+
+## Vision
+
+An internal company bounty program lets employees and teams use their own agents to challenge acceptance criteria shared within authorized groups. Confirmed counterexamples become regression tests and curated feedback for evaluation, optimization and potential training. Internal specs need not be published to the internet.
+
+Current deployment is a public demo using synthetic orders. It does not provide enterprise authentication, authorization, private spec storage, a feedback registry or model training. Never upload confidential specs to this demo. Testnet hashes and transactions are public, including wallet identities and amounts. Production enterprise access controls and an appropriate settlement deployment remain future work.
 
 ## Run
 

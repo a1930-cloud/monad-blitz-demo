@@ -1,0 +1,30 @@
+{
+  "success": true,
+  "data": {
+    "text": "这个方向站得住，但是「公开悬赏找验收反例」的买方很窄，团队通常不愿意把内部规格和验收标准拿出来，现在不收窄就会做成一个没人愿意公开规格的悬赏市场。我建议做，但一天只能收口到一个具体规格的开放挑战。\n\n需要它的是做 Agent 产品的团队和内部平台团队。他们的 Agent 在订单、定价、权限这类规则上跑错，错误结果却能通过现有验收，上线后才发现代价很高。有 QA 或安全预算的团队会为提前发现付钱；小团队多半觉得自己写 property test 更便宜，这部分需求不成立。\n\n往届最接近的是 「克劳巴扎」（Rebel in Paradise AI 黑客松，该场无排名），它托管赏金，用 LLM Oracle 按验收标准给工作者 Agent 的交付打分，落选者可以质押挑战进仲裁。它解决的是外包任务付款不公，不碰验收标准本身有漏洞。「Veris」（Monad Playground 黑客松，该场无排名） 做的是用 Benchmark 给 Agent 打分并写链上信誉，它给 Agent 排名，不进入某个团队自己的规格。没有项目做同一件事。\n\n链上在这里管的是赏金托管、规格与证据哈希承诺、分阶段结算。这三件事任何一条低费 EVM 都能做，赏金金额不小、频次也不高，Monad 的低费优势在这里不明显。放在 Monad 的理由是分阶段结算的确认速度，没有独占能力。\n\n一天做得完一个窄 demo。你已经有前端、合约和七笔测试网结算，缺的是通用 LLM 和外部 Agent。收口方式：选一个规则，比如订单折扣或定价，公开一条规格和一个已知会出错的实现，让一个外部模型或现场的人提交可复现反例，链上托管赏金，你确认有效性后结算，反例写进 registry。客户逐条确认反例会变成瓶颈，demo 只做一个客户能一眼判断的规则。砍掉多团队市场、训练素材管线、通用 LLM 接入和「模型已被训练」的说法。\n\n今天先做一件对照：用两个不同模型对着同一规格找反例，看外部模型找到的反例和你们自建 reviewer 找到的是不是同一批。如果重合，这个创意相比自己开 reviewer Agent 就没有额外价值，评委一定会问。先做出「外部找到、自建没找到」的那一条，再写市场合约。",
+    "relatedProjects": [
+      {
+        "projectId": 227,
+        "name": "克劳巴扎",
+        "eventTitle": "Rebel in Paradise AI 黑客松",
+        "rankLabel": "该场无排名",
+        "url": "https://mojo.devnads.com/projects/227",
+        "collides": false
+      },
+      {
+        "projectId": 317,
+        "name": "Veris",
+        "eventTitle": "Monad Playground 黑客松",
+        "rankLabel": "该场无排名",
+        "url": "https://mojo.devnads.com/projects/317",
+        "collides": false
+      }
+    ],
+    "quota": {
+      "limit": 20,
+      "used": 5,
+      "remainingToday": 15,
+      "resetAt": "2026-11-21T16:00:00.000Z"
+    }
+  }
+}
