@@ -1,20 +1,11 @@
-# Monad Blitz Demo
+# SpecBounty — Monad Blitz Guangzhou
 
-Monad Blitz hackathon workspace. Initial candidate: **Blitz Vote**, live onchain audience voting on Monad.
+An acceptance-specification bounty prototype: discover an incorrect agent delivery that still passes the tests, reward a customer-approved counterexample, repair and freeze the specification, then accept the correct delivery.
 
-Status: repository initialized; event rules pending verification; no application or deployed contract yet.
+Application source and setup: [specbounty/README.md](specbounty/README.md).
 
-## Quick start
+Research and mentor responses: [docs/](docs/).
 
-Requires Node.js 22+.
+Status: frontend lab implemented and locally verified; Solidity escrow compiled and tested on a local EVM. Monad Testnet deployment and real settlement are pending wallet authorization. The current agent probe is deterministic, not an LLM.
 
-```sh
-npm run check:rpc
-```
-
-This read-only check confirms the configured RPC chain ID and retrieves the latest block. It needs no wallet or private key.
-
-- [Monad research and event rule status](docs/research.md)
-- [Four-hour MVP proposal](docs/mvp.md)
-
-Never commit seed phrases, private keys, or `.env` files. Use a dedicated testnet wallet for development.
+No secrets belong in this repository. `.mojo/` contains local credentials and is excluded from Git.
