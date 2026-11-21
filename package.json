@@ -1,0 +1,8 @@
+{
+  "name": "monad-blitz-demo",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": { "check:rpc": "node scripts/check-rpc.mjs" },
+  "engines": { "node": ">=22" }
+}
